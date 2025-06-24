@@ -1,0 +1,44 @@
+/* Global and layout styles only */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+.display-4 {
+  color: #2c3e50;
+}
+
+.lead {
+  color: #6c757d;
+}
+
+/* Page specific styles */
+.home-page .card {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.about-page h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.contact-page .card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2rem;
+  }
+  main {
+    padding: 1rem 0;
+  }
+}

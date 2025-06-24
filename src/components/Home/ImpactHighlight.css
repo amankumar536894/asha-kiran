@@ -1,0 +1,75 @@
+/* ImpactHighlight Component Styles */
+.impact-highlight-section {
+  background: #f7f6f2;
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+}
+
+.impact-highlight-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.impact-highlight-title {
+  font-weight: 700;
+  color: #4a3a5a;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+.impact-highlight-desc {
+  color: #7c5e99;
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.impact-highlight-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 2px 12px rgba(44,34,51,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.impact-highlight-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(44,34,51,0.13);
+}
+.impact-highlight-icon {
+  font-size: 2rem;
+  color: #f7d26a;
+  margin-bottom: 0.5rem;
+}
+.impact-highlight-value {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #4a3a5a;
+}
+.impact-highlight-label {
+  color: #7c5e99;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .impact-highlight-section {
+    padding: 1.5rem 0.5rem;
+    border-radius: 1rem;
+  }
+  .impact-highlight-title {
+    font-size: 1.3rem;
+  }
+  .impact-highlight-desc {
+    font-size: 1rem;
+  }
+  .impact-highlight-card {
+    padding: 1rem 0.5rem;
+  }
+  .impact-highlight-value {
+    font-size: 1.1rem;
+  }
+  .impact-highlight-label {
+    font-size: 0.95rem;
+  }
+} 
