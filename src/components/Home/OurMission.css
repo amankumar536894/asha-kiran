@@ -1,19 +1,124 @@
-.feature-card {
-  max-width: 350px;
-  width: 100%;
-  margin: 0 auto 2rem auto;
-  /* Optional: add padding, background, border-radius for better look */
-  padding: 1.5rem 1rem;
-  background: #fff;
-  border-radius: 1.2rem;
-  box-shadow: 0 2px 12px rgba(44,34,51,0.07);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Our Mission Section Styles */
+.our-mission-section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+  padding: 4rem 0 3rem 0;
+  box-sizing: border-box;
 }
 
-@media (min-width: 992px) {
-  .feature-card {
-    max-width: 500px;
+.our-mission-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.our-mission-title {
+  font-size: 2.7rem;
+  font-weight: 800;
+  color: #2c2233;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+}
+
+.our-mission-desc {
+  font-size: 1.25rem;
+  color: #5a5a89;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.our-mission-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.our-mission-card {
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 8px 32px rgba(44, 34, 51, 0.08);
+  padding: 2.5rem 2rem 2rem 2rem;
+  flex: 1 1 320px;
+  min-width: 300px;
+  max-width: 370px;
+  text-align: center;
+  transition: transform 0.25s, box-shadow 0.25s;
+  border: 1.5px solid #e0e7ff;
+  position: relative;
+}
+
+.our-mission-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 16px 48px rgba(44, 34, 51, 0.15);
+  border-color: #a5b4fc;
+}
+
+.our-mission-icon {
+  font-size: 2.8rem;
+  background: linear-gradient(135deg, #a5b4fc 0%, #f7d26a 100%);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem auto;
+  box-shadow: 0 4px 16px rgba(165, 180, 252, 0.18);
+  color: #2c2233;
+  transition: box-shadow 0.25s, transform 0.25s;
+}
+
+.our-mission-card:hover .our-mission-icon {
+  box-shadow: 0 8px 32px rgba(247, 210, 106, 0.25);
+  transform: scale(1.1);
+}
+
+.our-mission-card-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #2c2233;
+  margin-bottom: 0.7rem;
+}
+
+.our-mission-card-text {
+  color: #5a5a89;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .our-mission-cards {
+    gap: 1.2rem;
+  }
+  .our-mission-card {
+    min-width: 220px;
+    max-width: 100%;
+    padding: 2rem 1rem 1.5rem 1rem;
   }
 }
+
+@media (max-width: 600px) {
+  .our-mission-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .our-mission-section {
+    padding: 2.5rem 0 1.5rem 0;
+  }
+  .our-mission-title {
+    font-size: 2rem;
+  }
+  .our-mission-desc {
+    font-size: 1rem;
+  }
+} 

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
-import './Gallery.css';
+import './HomeGallery.css';
+import { useNavigate } from 'react-router-dom';
 
 const galleryData = [
   {
@@ -40,7 +41,12 @@ const galleryData = [
   }
 ];
 
-function Gallery() {
+function HomeGallery() {
+  const navigate = useNavigate();
+  const handleDonate = () => {
+    navigate('/donate');
+  }
+
   const scrollRef = useRef(null);
   const rowRef = useRef(null);
   const [paused, setPaused] = useState(false);
@@ -135,7 +141,7 @@ function Gallery() {
               </div>
               <div className="gallery-card-body">
                 <h5 className="gallery-card-title">{item.title}</h5>
-                <button className="gallery-donate-btn">Donate</button>
+                <button className="gallery-donate-btn" onClick={handleDonate}>Donate</button>
               </div>
             </div>
           ))}
@@ -145,4 +151,4 @@ function Gallery() {
   );
 }
 
-export default Gallery; 
+export default HomeGallery; 

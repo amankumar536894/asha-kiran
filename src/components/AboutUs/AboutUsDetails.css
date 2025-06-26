@@ -1,0 +1,220 @@
+.aboutus-details {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #fffdfa;
+  padding: 2.5rem 0 2rem 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.aboutus-details__container {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  box-sizing: border-box;
+}
+
+.aboutus-details__header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.aboutus-details__title {
+  color: #3d2c0a;
+  font-size: 2.7rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.aboutus-details__subtitle {
+  color: #7c6842;
+  font-size: 1.15rem;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.aboutus-details__cards {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0 1.2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutus-details__card {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff7e6;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(255, 193, 7, 0.08);
+  padding: 1.5rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.7rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  box-sizing: border-box;
+}
+
+.aboutus-details__card:hover {
+  box-shadow: 0 8px 32px rgba(255, 193, 7, 0.18);
+  transform: translateY(-2px) scale(1.03);
+}
+
+.aboutus-details__icon {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.aboutus-details__card-title {
+  color: #a67c00;
+  font-size: 1.18rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.aboutus-details__card-desc {
+  color: #5a4a2c;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.aboutus-details__values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  color: #7c6842;
+  font-size: 1.02rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.aboutus-details__cta-section {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 1.5rem 0 0 0;
+  background: #ffe082;
+  border-radius: 1.2rem;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(255, 193, 7, 0.10);
+  box-sizing: border-box;
+}
+
+.aboutus-details__cta-title {
+  color: #6d4c00;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.aboutus-details__cta-desc {
+  color: #8d6e36;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+}
+
+.aboutus-details__cta-btn {
+  background: #ffb300;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.12rem;
+  padding: 0.85rem 2.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  box-shadow: 0 4px 16px rgba(255, 193, 7, 0.15);
+  transition: background 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+.aboutus-details__cta-btn:hover {
+  background: #ff9800;
+  transform: translateY(-2px) scale(1.04);
+}
+
+.aboutus-details__card-image-area {
+  width: 100%;
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.aboutus-details__card-image {
+  width: 100%;
+  max-width: 340px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(255, 193, 7, 0.10);
+  background: #fffdfa;
+}
+
+@media (min-width: 768px) {
+  .aboutus-details__container {
+    padding: 0 2vw;
+  }
+  .aboutus-details__cards {
+    flex-direction: row;
+    gap: 2.2rem;
+    justify-content: center;
+    align-items: stretch;
+    width: 100vw;
+    max-width: 100vw;
+    padding: 0 2vw;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .aboutus-details__card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .aboutus-details__cta-section {
+    padding: 2.5rem 4vw 2rem 4vw;
+    margin: 2rem 0 0 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .aboutus-details__container {
+    padding: 0 0.5rem;
+  }
+  .aboutus-details__cards {
+    padding: 0 0.5rem;
+  }
+  .aboutus-details__card {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .aboutus-details__cta-section {
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    max-width: 98vw;
+  }
+  .aboutus-details__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutus-details__card-image {
+    max-width: 100%;
+    height: 120px;
+  }
+} 

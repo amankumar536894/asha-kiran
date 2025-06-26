@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import './Carousel.css'
+import { useNavigate } from 'react-router-dom'
 
 function Carousel() {
   useEffect(() => {
@@ -11,25 +12,30 @@ function Carousel() {
     }
   }, [])
 
+  const navigate = useNavigate();
+  const handleDonate = () => {
+    navigate('/donate');
+  }
+
   // Carousel data - you can replace these with your actual images
   const carouselData = [
     {
       id: 1,
-      image: '/image.png',
-      title: 'Empowering Communities',
+      image: '/carousel/image3.png',
+      title: 'Woman Empowerment',
       // subtitle: 'Building a brighter future together',
       // description: 'We work tirelessly to create positive change in communities through education, healthcare, and sustainable development initiatives.'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
+      image: '/carousel/image2.png',
       title: 'Education for All',
       // subtitle: 'Unlocking potential through learning',
       // description: 'Providing quality education to underprivileged children and youth, ensuring every child has the opportunity to learn and grow.'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: '/carousel/image1.png',
       title: 'Healthcare Access',
       // subtitle: 'Caring for communities',
       // description: 'Ensuring access to basic healthcare services for all communities, promoting wellness and preventing illness.'
@@ -70,7 +76,7 @@ function Carousel() {
                       <h1 className="carousel-title">{slide.title}</h1>
                       <div className="carousel-buttons">
                         <button className="btn btn-primary btn-lg me-3">Learn More</button>
-                        <button className="btn btn-outline-light btn-lg">Donate Now</button>
+                        <button className="btn btn-outline-light btn-lg" onClick={handleDonate}>Donate Now</button>
                       </div>
                     </div>
                   </div>

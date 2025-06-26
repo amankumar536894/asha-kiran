@@ -8,6 +8,9 @@
   position: relative;
   overflow: hidden;
 }
+.image-grid-header h2{
+  color: #b45f06;
+}
 
 .image-grid-header {
   text-align: center;

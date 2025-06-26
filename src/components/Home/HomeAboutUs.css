@@ -1,0 +1,231 @@
+.homeabout-section {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, #f8fafc 60%, #f7d26a18 100%);
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.homeabout-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #b45f06;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.homeabout-content-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  gap: 1.5rem;
+  background: #fff;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(44, 34, 51, 0.08);
+  padding: 1.2rem 1.2rem;
+  box-sizing: border-box;
+}
+
+.homeabout-image-col {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+}
+
+.homeabout-image {
+  width: 380px;
+  height: 200px;
+  max-width: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 8px rgba(44, 34, 51, 0.13);
+  background: #f8fafc;
+  object-fit: cover;
+}
+
+.homeabout-text-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+}
+
+.homeabout-welcome {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b45f06;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.homeabout-desc {
+  font-size: 0.98rem;
+  color: #5a5a89;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  max-width: 95vw;
+  text-align: justify;
+}
+
+.homeabout-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: 100%;
+  align-items: center;
+}
+
+.homeabout-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.7rem 1.2rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.13);
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+  cursor: pointer;
+  width: 90%;
+  max-width: 320px;
+}
+.donate-btn {
+  background: #ffb300;
+  color: #fff;
+}
+.donate-btn:hover {
+  background: #ff9800;
+  transform: translateY(-2px) scale(1.04);
+}
+.call-btn {
+  background: #fff;
+  color: #b45f06;
+  border: 2px solid #b45f06;
+  margin-left: 0;
+  width: 100%;
+  max-width: 400px;
+  min-width: 220px;
+}
+.call-btn:hover {
+  background: #b45f06;
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+.call-btn i {
+  margin-right: 0.7rem;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 600px) {
+  .homeabout-section {
+    padding: 3rem 2.5rem 2rem 2.5rem;
+  }
+  .homeabout-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  .homeabout-content-row {
+    padding: 2rem 2.5rem;
+  }
+  .homeabout-image {
+    width: 420px;
+    height: 260px;
+  }
+  .homeabout-welcome {
+    font-size: 2rem;
+  }
+  .homeabout-desc {
+    font-size: 1.08rem;
+    margin-bottom: 1.7rem;
+  }
+  .homeabout-actions {
+    flex-direction: row;
+    gap: 1.2rem;
+    width: auto;
+  }
+  .homeabout-btn {
+    width: auto;
+    font-size: 1.08rem;
+    padding: 0.85rem 2.2rem;
+    min-width: 180px;
+  }
+  .call-btn {
+    min-width: 240px;
+    max-width: 420px;
+  }
+}
+
+@media (min-width: 900px) {
+  .homeabout-section {
+    padding: 4rem 0 3rem 0;
+  }
+  .homeabout-title {
+    font-size: 2.7rem;
+    margin-bottom: 2.5rem;
+  }
+  .homeabout-content-row {
+    flex-direction: row;
+    align-items: center;
+    gap: 4.5rem;
+    padding: 2.5rem 0;
+    border-radius: 2rem;
+    width: 100%;
+    max-width: 100vw;
+  }
+  .homeabout-image-col {
+    width: auto;
+    max-width: 100vw;
+    margin-bottom: 0;
+  }
+  .homeabout-image {
+    width: 600px;
+    height: 400px;
+    max-width: 100%;
+  }
+  .homeabout-text-col {
+    width: auto;
+    align-items: flex-start;
+    padding: 0 3vw 0 0;
+    text-align: left;
+  }
+  .homeabout-welcome {
+    font-size: 2.7rem;
+    text-align: left;
+  }
+  .homeabout-desc {
+    font-size: 1.25rem;
+    max-width: 600px;
+    text-align: justify;
+  }
+  .homeabout-actions {
+    flex-direction: row;
+    gap: 1.2rem;
+    width: auto;
+    align-items: flex-start;
+  }
+  .homeabout-btn {
+    width: auto;
+    font-size: 1.15rem;
+    padding: 1rem 2.5rem;
+    min-width: 180px;
+  }
+  .call-btn {
+    min-width: 260px;
+    max-width: 600px;
+  }
+}

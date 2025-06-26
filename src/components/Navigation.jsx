@@ -1,20 +1,18 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import logo from '../assets/logo.png' // Replace with your logo path
 import { useState, useRef } from 'react'
 import './Navigation.css'
+import './SocialBar.css'
 
 const navLinks = [
   { path: '/', label: 'Home' },
-  { path: '/about', label: 'About Us' },
-  { path: '/our-work', label: 'Our Work', dropdown: [
-    { path: '/campaigns', label: 'Campaigns' }
-  ] },
-  { path: '/sponsors', label: 'Sponsors' },
-  { path: '/media', label: 'Media', dropdown: [
-    { path: '/blog', label: 'Blog' },
-    { path: '/gallery', label: 'Gallery' }
-  ] },
-  { path: '/contact', label: 'Contact Us' },
+  { path: '/about_asha_kiran', label: 'About Us' },
+  { path: '/our-services_asha_kiran', label: 'Our Services'},
+  { path: '/events_asha_kiran', label: 'Events' },
+  { path: '/gallery_asha_kiran', label: 'Gallery' },
+  { path: '/carrier_asha_kiran', label: 'Carrier'},
+  { path: '/blog_asha_kiran', label: 'Blog' },
+  { path: '/contact_asha_kiran', label: 'Contact Us' },
 ]
 
 function Navigation() {
@@ -25,6 +23,10 @@ function Navigation() {
   const dropdownTimeoutRef = useRef(null)
 
   const isActive = (path) => location.pathname === path
+  const navigate = useNavigate()
+  const handleDonate = () => {
+    navigate('/donate')
+  }
 
   // Desktop dropdown handlers with delay
   const handleDropdownEnter = (label) => {
@@ -49,11 +51,13 @@ function Navigation() {
     <nav className="custom-navbar">
       <div className="nav-inner container-fluid">
         <div className="nav-left">
-          <img src={logo} alt="Asha Kiran GRD" className="nav-logo" />
-          <div className="nav-brand-text">
-            <span className="brand-main">Asha Kiran</span>
-            <span className="brand-sub">GRD</span>
-          </div>
+          <Link to="/" className="nav-left" style={{ textDecoration: 'none' }}>
+            <img src={logo} alt="Asha Kiran GRD" className="nav-logo" />
+            <div className="nav-brand-text">
+              <span className="brand-main">Asha Kiran</span>
+              <span className="brand-sub">GRD</span>
+            </div>
+          </Link>
         </div>
         <button className={`nav-toggle${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(true)} aria-label="Open navigation">
           <span className="toggle-bar"></span>
@@ -99,7 +103,7 @@ function Navigation() {
             ))}
           </ul>
         </div>
-        <div className="nav-right desktop-only">
+        <div className="nav-right desktop-only" onClick={handleDonate}>
           <Link to="/donate" className="donate-btn">
             <span className="donate-icon">
               <i className="bi bi-cash-stack"></i>
@@ -123,16 +127,24 @@ function Navigation() {
         <ul className="mobile-nav-links">
           {navLinks.map((link) => (
             <li key={link.path} className={link.dropdown ? 'has-dropdown' : ''}>
-              <div className={`mobile-nav-link${isActive(link.path) ? ' active' : ''}`}
-                onClick={() => link.dropdown ? handleMobileDropdown(link.label) : setMenuOpen(false)}
-              >
-                <span>{link.label}</span>
-                {link.dropdown && (
+              {link.dropdown ? (
+                <div className={`mobile-nav-link${isActive(link.path) ? ' active' : ''}`}
+                  onClick={() => handleMobileDropdown(link.label)}
+                >
+                  <span>{link.label}</span>
                   <span className="arrow">
                     <i className={`bi ${mobileDropdown[link.label] ? 'bi-chevron-up' : 'bi-chevron-down'}`}></i>
                   </span>
-                )}
-              </div>
+                </div>
+              ) : (
+                <Link
+                  to={link.path}
+                  className={`mobile-nav-link${isActive(link.path) ? ' active' : ''}`}
+                  onClick={() => setMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              )}
               {link.dropdown && mobileDropdown[link.label] && (
                 <ul className="mobile-dropdown-menu">
                   {link.dropdown.map((item) => (
@@ -169,6 +181,27 @@ function Navigation() {
       </div>
       {menuOpen && <div className="mobile-menu-backdrop" onClick={() => setMenuOpen(false)}></div>}
     </nav>
+  )
+}
+
+export function SocialBar() {
+  return (
+    <div className="social-bar">
+      <div className="social-bar-inner">
+        <a href="https://www.facebook.com/share/1Ccvekj7od/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="social-link">
+          <i className="bi bi-facebook"></i>
+        </a>
+        <a href="https://wa.me/7696728189" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="social-link">
+          <i className="bi bi-whatsapp"></i>
+        </a>
+        <a href="https://youtube.com/@tcs-lh4ry?si=CQpZL5QrSksm52ms" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-link">
+          <i className="bi bi-youtube"></i>
+        </a>
+        <a href="mailto:ashakirangrd11@gmail.com" aria-label="Email" className="social-link">
+          <i className="bi bi-envelope-fill"></i>
+        </a>
+      </div>
+    </div>
   )
 }
 

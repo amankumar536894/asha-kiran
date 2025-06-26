@@ -1,0 +1,195 @@
+.blogs-list-section {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #f8fafc;
+  padding: 2.5rem 0 2rem 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.blogs-list-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.2rem;
+}
+
+.blog-card {
+  background: linear-gradient(120deg, #fffdfa 80%, #ffe08218 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(44, 34, 51, 0.08);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  border: 1px solid #f7d26a22;
+}
+.blog-card:hover {
+  box-shadow: 0 12px 36px rgba(255, 193, 7, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
+.blog-card-image-wrapper {
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #f7d26a18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.blog-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+.blog-card:hover .blog-card-image {
+  transform: scale(1.07);
+}
+
+.blog-card-content {
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.blog-card-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #b45f06;
+  margin-bottom: 0.2rem;
+}
+.blog-card-subtitle {
+  font-size: 1.1rem;
+  color: #7c6842;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+.blog-card-description {
+  color: #5a5a89;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+.blog-card-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.98rem;
+  color: #a67c00;
+  margin-bottom: 0.7rem;
+}
+.blog-card-readmore {
+  background: #f7d26a;
+  color: #2c2233;
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 2.2rem;
+  box-shadow: 0 2px 8px rgba(247,210,106,0.18);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  align-self: flex-start;
+}
+.blog-card-readmore:hover {
+  background: #ffe08a;
+  box-shadow: 0 4px 16px rgba(244, 208, 63, 0.15);
+  transform: translateY(-2px) scale(1.03);
+}
+
+@media (min-width: 700px) {
+  .blogs-list-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  .blog-card-image-wrapper {
+    height: 240px;
+  }
+}
+@media (min-width: 1100px) {
+  .blogs-list-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  .blog-card-image-wrapper {
+    height: 200px;
+  }
+}
+@media (max-width: 600px) {
+  .blogs-list-section {
+    padding: 1.2rem 0 0.7rem 0;
+  }
+  .blogs-list-container {
+    padding: 0 0.3rem;
+    gap: 1.2rem;
+  }
+  .blog-card-content {
+    padding: 1rem 0.5rem 0.7rem 0.5rem;
+  }
+  .blog-card-title {
+    font-size: 1.1rem;
+  }
+  .blog-card-subtitle {
+    font-size: 0.95rem;
+  }
+  .blog-card-description {
+    font-size: 0.95rem;
+  }
+  .blog-card-meta {
+    font-size: 0.92rem;
+  }
+  .blog-card-readmore {
+    font-size: 0.98rem;
+    padding: 0.5rem 1.2rem;
+  }
+  .blog-card-image-wrapper {
+    height: 140px;
+  }
+}
+
+.blog-card-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 370px;
+  background: #f8fafc;
+  border: 2px dashed #ffe08a;
+  color: #b45f06;
+  box-shadow: 0 2px 8px rgba(44, 34, 51, 0.04);
+  border-radius: 1.5rem;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 420px;
+}
+.blog-card-placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.blog-card-placeholder-text {
+  font-size: 1.15rem;
+  color: #b45f06;
+  opacity: 0.8;
+  text-align: center;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .blog-card-placeholder {
+    min-height: 220px;
+    max-width: 98vw;
+    border-radius: 1rem;
+  }
+  .blog-card-placeholder-text {
+    font-size: 1rem;
+  }
+} 

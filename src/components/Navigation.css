@@ -3,8 +3,8 @@
   background: #fff;
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
   padding: 0.5rem 0;
-  /* position: sticky; */
-  top: 0;
+  position: sticky;
+  top: 36px;
   z-index: 1000;
 }
 
@@ -75,8 +75,13 @@
   cursor: pointer;
 }
 .nav-link.active {
-  color: #2c2233;
+  color: #fff;
   font-weight: 700;
+  background: #babc65;
+  border-radius: 1.5rem;
+  box-shadow: 0 2px 12px rgba(244, 208, 63, 0.13);
+  padding: 0 0.6rem ;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
 .nav-link:hover {
@@ -233,8 +238,13 @@
   border-radius: 0.5rem;
 }
 .mobile-nav-link.active {
-  color: #f7d26a;
+  color: #2c2233;
+  background: linear-gradient(90deg, #f7d26a 0%, #ffe08a 100%);
   font-weight: 700;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 12px rgba(244, 208, 63, 0.13);
+  padding: 0.8rem 1.2rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 .mobile-nav-link .arrow {
   color: #fff;
@@ -420,4 +430,10 @@
 /***** Responsive Fixes *****/
 .dropdown-menu {
   pointer-events: auto;
+}
+
+@media (max-width: 600px) {
+  .custom-navbar {
+    top: 32px;
+  }
 }
