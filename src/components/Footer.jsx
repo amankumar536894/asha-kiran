@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/logo.png'
 import './Footer.css';
 
@@ -24,11 +25,12 @@ function Footer() {
               <div className="footer-links-col">
                 <div className="footer-links-title">Navigation</div>
                 <ul className="footer-nav list-unstyled mb-3">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#gallery">Gallery</a></li>
-                  <li><a href="#impact">Impact</a></li>
-                  <li><a href="#donate">Donate</a></li>
-                  <li><a href="#contact">Contact</a></li>
+                  <li><Link to="/about_asha_kiran">About Us</Link></li>
+                  <li><Link to="/our-services_asha_kiran">Our Services</Link></li>
+                  <li><Link to="/events_asha_kiran">Events</Link></li>
+                  <li><Link to="/gallery_asha_kiran">Gallery</Link></li>
+                  <li><Link to="/carrier_asha_kiran">Carrier</Link></li>
+                  <li><Link to="/blog_asha_kiran">Blog</Link></li>
                 </ul>
               </div>
               <div className="footer-links-divider"></div>

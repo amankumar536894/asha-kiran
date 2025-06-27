@@ -23,7 +23,7 @@ const HomeAboutUs = () => {
           </p>
           <div className="homeabout-actions">
             <Link to="/donate" className="homeabout-btn donate-btn" onClick={handleDonate}>Donate Us</Link>
-            <a href="tel:+917696728189" className="homeabout-btn call-btn"><i className="fas fa-phone"></i> Call Any Time +91 76967 28189</a>
+            <a href="tel:+917696728189" className="homeabout-btn call-btn"><i className="fas fa-phone"></i> Call Now +91 76967 28189</a>
           </div>
         </div>
       </div>
