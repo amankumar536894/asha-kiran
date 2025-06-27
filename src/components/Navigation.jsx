@@ -160,16 +160,16 @@ function Navigation() {
         <div className="mobile-contact">
           <div className="contact-row">
             <span className="contact-icon"><i className="bi bi-envelope-fill"></i></span>
-            <span>info@ashakiran@gmail.com</span>
+            <span>ashakirangrd11@gmail.com</span>
           </div>
           <div className="contact-row">
             <span className="contact-icon"><i className="bi bi-telephone-fill"></i></span>
-            <span>8235151802</span>
+            <span>7696728189</span>
           </div>
           <div className="contact-row social-row">
-            <a href="#" className="social-icon"><i className="bi bi-facebook"></i></a>
-            <a href="#" className="social-icon"><i className="bi bi-whatsapp"></i></a>
-            <a href="#" className="social-icon"><i className="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/share/1Ccvekj7od/" className="social-icon" target='_blank'><i className="bi bi-facebook"></i></a>
+            <a href="https://wa.me/7696728189" className="social-icon" target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp"></i></a>
+            <a href="https://youtube.com/@tcs-lh4ry?si=CQpZL5QrSksm52ms" className="social-icon" target='_blank'><i className="bi bi-youtube"></i></a>
           </div>
         </div>
         <Link to="/donate" className="donate-btn mobile-donate">
@@ -205,4 +205,4 @@ export function SocialBar() {
   )
 }
 
-export default Navigation 
+export default Navigation

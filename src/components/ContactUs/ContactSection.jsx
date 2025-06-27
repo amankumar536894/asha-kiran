@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import './ContactSection.css';
 
 const CONTACT = {
-  address: '123 Hope Street, Near City Center, Dehradun, Uttarakhand, India',
+  address: 'Malti Niwas, 2nd floor, Anisabad, Patna, India',
   phone: '+91 82351 51802',
   email: 'info@ashakiran.org',
   socials: [
-    { icon: 'bi-facebook', url: 'https://facebook.com', label: 'Facebook' },
-    { icon: 'bi-instagram', url: 'https://instagram.com', label: 'Instagram' },
-    { icon: 'bi-youtube', url: 'https://youtube.com', label: 'YouTube' },
-    { icon: 'bi-envelope-fill', url: 'mailto:info@ashakiran.org', label: 'Email' },
+    { icon: 'bi-facebook', url: 'https://www.facebook.com/share/1Ccvekj7od/', label: 'Facebook' },
+    { icon: 'bi-youtube', url: 'https://youtube.com/@tcs-lh4ry?si=CQpZL5QrSksm52ms', label: 'YouTube' },
+    { icon: 'bi-whatsapp', url: 'https://wa.me/917696728189', label: 'WhatsApp' },
+    { icon: 'bi-envelope-fill', url: 'mailto:ashakirangrd11@gmail.com.org', label: 'Email' },
   ],
 };
 
@@ -113,9 +113,9 @@ const ContactSection = () => {
       <div className="contact-map-box">
         <iframe
           title="Asha Kiran GRD Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.123456789!2d78.0322!3d30.3165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929b1b1b1b1b1%3A0x123456789abcdef!2sDehradun%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.6097341247955!2d85.0983704!3d25.584647699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed571a4fb13005%3A0x4791884ba938dbef!2sAnisabad%20Patna!5e0!3m2!1sen!2sin!4v1750945155671!5m2!1sen!2sin"
           width="100%"
-          height="220"
+          height="320"
           style={{ border: 0, borderRadius: '1.2rem', boxShadow: '0 2px 12px rgba(44,34,51,0.08)' }}
           allowFullScreen=""
           loading="lazy"

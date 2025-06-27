@@ -8,7 +8,7 @@ const OurServicesPage = () => {
   return (
     <>
       <OurServices />
-      <ImpactStories/>
+      {/* <ImpactStories/> */}
       <Footer />
     </>
   );

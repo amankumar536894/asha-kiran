@@ -22,21 +22,21 @@ function Carousel() {
     {
       id: 1,
       image: '/carousel/image3.png',
-      title: 'Woman Empowerment',
+      // title: 'Woman Empowerment',
       // subtitle: 'Building a brighter future together',
       // description: 'We work tirelessly to create positive change in communities through education, healthcare, and sustainable development initiatives.'
     },
     {
       id: 2,
       image: '/carousel/image2.png',
-      title: 'Education for All',
+      // title: 'Education for All',
       // subtitle: 'Unlocking potential through learning',
       // description: 'Providing quality education to underprivileged children and youth, ensuring every child has the opportunity to learn and grow.'
     },
     {
       id: 3,
       image: '/carousel/image1.png',
-      title: 'Healthcare Access',
+      // title: 'Healthcare Access',
       // subtitle: 'Caring for communities',
       // description: 'Ensuring access to basic healthcare services for all communities, promoting wellness and preventing illness.'
     }
@@ -70,7 +70,7 @@ function Carousel() {
                   backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${slide.image}')`
                 }}
               >
-                <div className="carousel-content">
+                {/* <div className="carousel-content">
                   <div className="row">
                     <div className="col-lg-8 mx-auto text-center">
                       <h1 className="carousel-title">{slide.title}</h1>
@@ -80,7 +80,7 @@ function Carousel() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

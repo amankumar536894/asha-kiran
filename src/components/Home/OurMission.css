@@ -1,14 +1,10 @@
 /* Our Mission Section Styles */
 .our-mission-section {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  width: 100%;
   background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
   padding: 4rem 0 3rem 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .our-mission-header {
@@ -19,14 +15,14 @@
 .our-mission-title {
   font-size: 2.7rem;
   font-weight: 800;
-  color: #2c2233;
+  color: #b45f06;
   margin-bottom: 0.7rem;
   letter-spacing: 1px;
 }
 
 .our-mission-desc {
   font-size: 1.25rem;
-  color: #5a5a89;
+  color: #7c6842;
   max-width: 650px;
   margin: 0 auto;
   line-height: 1.7;

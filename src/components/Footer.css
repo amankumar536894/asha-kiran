@@ -57,6 +57,17 @@
   color: #f7d26a;
   margin-right: 0.4rem;
 }
+.footer-contact a {
+  text-decoration: none;
+  color: #4a3a5a;
+  font-size: 1.13rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.footer-contact a:hover {
+  color: #b45f06;
+  text-decoration: underline;
+}
 .footer-social a {
   color: #7c5e99;
   font-size: 1.4rem;
@@ -91,11 +102,34 @@
     font-size: 0.98rem;
   }
   .footer-contact {
-    font-size: 0.95rem;
+    width: 100%;
+    text-align: center;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto 1.2rem auto;
+    padding-right: 0 !important;
+    display: flex;
+    flex-direction: column;
   }
-  .footer-social a {
-    font-size: 1.1rem;
-    margin: 0 0.2rem;
+  .footer-social {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1.2rem auto;
+    padding-right: 0 !important;
+  }
+  .footer-newsletter .form-control {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0;
+  }
+  .footer-newsletter {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .footer-copyright {
     font-size: 0.92rem;
@@ -277,6 +311,7 @@
     font-size: 1.2rem;
   }
 }
+
 @media (max-width: 768px) {
   .footer-section-wide {
     border-radius: 0.7rem 0.7rem 0 0;
@@ -287,42 +322,52 @@
     padding-right: 0.2rem;
   }
   .footer-title {
-    font-size: 1.1rem;
+    font-size: 1.9rem;
   }
   .footer-logo-img {
-    height: 28px;
-    width: 28px;
+    height: 48px;
+    width: 32px;
   }
   .footer-tagline {
-    font-size: 0.98rem;
+    font-size: 1.08rem;
+    text-align: center;
+    margin-right: 42px;
   }
   .footer-mission {
-    font-size: 0.92rem;
+    font-size: 1.02rem;
+    text-align: justify;
+    margin: 0 1.2rem;
   }
   .footer-links-title {
-    font-size: 0.95rem;
+    font-size: 1.4rem;
   }
   .footer-nav, .footer-quick-links {
     gap: 0.5rem;
   }
-  .footer-contact {
-    font-size: 0.93rem;
+  .footer-contact,
+  .footer-social {
+    width: 100%;
     text-align: center;
-  }
-  .footer-social a {
-    font-size: 1rem;
-    margin: 0 0.2rem;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto 1.2rem auto;
+    padding-right: 0 !important;
+    display: flex;
+    flex-direction: column;
   }
   .footer-newsletter .form-control {
-    font-size: 0.95rem;
-    padding: 0.4rem 0.7rem;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0;
   }
-  .btn-newsletter {
-    font-size: 0.95rem;
-    padding: 0.4rem 1rem;
+  .footer-newsletter {
+    width: 100%;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .footer-copyright {
-    font-size: 0.92rem;
+    font-size: 1.02rem;
   }
 }
 
@@ -384,6 +429,7 @@
   text-align: left;
   margin-bottom: 1.2rem;
   padding-right: 4rem;
+  margin-right: 1.7rem;
 }
 .footer-newsletter {
   align-items: flex-end !important;

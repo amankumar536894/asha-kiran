@@ -11,7 +11,7 @@ function Footer() {
           <div className="col-12 col-md-4 col-lg-4 text-center text-md-start mb-4 mb-md-0">
             <div className="footer-logo mb-2 d-flex align-items-center justify-content-center justify-content-md-start">
               <img src={logo} alt="NGO Logo" className="footer-logo-img me-2" />
-              <span className="footer-title">Asha Kiran GRD</span>
+              <span className="footer-title" >Asha Kiran GRD</span>
             </div>
             <div className="footer-tagline mb-2">Lighting Lives, Spreading Hope</div>
             <div className="footer-mission">
@@ -46,16 +46,15 @@ function Footer() {
           {/* Right: Contact, Social, Newsletter all left-aligned */}
           <div className="col-12 col-md-4 col-lg-4 text-start">
             <div className="footer-contact mb-3">
-              <div><i className="bi bi-envelope"></i> info@ashakiran.org</div>
-              <div><i className="bi bi-telephone"></i> +91 76967 28189</div>
-              <div><i className="bi bi-geo-alt"></i> Dehradun, Uttarakhand, India</div>
+              <div><i className="bi bi-envelope"></i> <a href="mailto:info@ashakiran.org">ashakirangrd11@gmail.com</a></div>
+              <div><i className="bi bi-telephone"></i> <a href="tel:+917696728189">+91 76967 28189</a></div>
+              <div><i className="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/nnNdm2DZF88GJGa28" target="_blank" rel="noopener noreferrer">Dehradun, Uttarakhand, India</a></div>
             </div>
             <div className="footer-social mb-3">
-              <a href="#" aria-label="Facebook"><i className="bi bi-facebook"></i></a>
-              <a href="#" aria-label="Instagram"><i className="bi bi-instagram"></i></a>
-              <a href="#" aria-label="Twitter"><i className="bi bi-twitter-x"></i></a>
-              <a href="#" aria-label="LinkedIn"><i className="bi bi-linkedin"></i></a>
-              <a href="#" aria-label="YouTube"><i className="bi bi-youtube"></i></a>
+              <a href="https://www.facebook.com/share/1Ccvekj7od/" aria-label="Facebook" target='_blank'><i className="bi bi-facebook"></i></a>
+              <a href="mailto:ashakirangrd11@gmail.com" aria-label="Email"><i className="bi bi-envelope-fill"></i></a>
+              <a href="https://youtube.com/@tcs-lh4ry?si=CQpZL5QrSksm52ms" aria-label="YouTube" target='_blank'><i className="bi bi-youtube"></i></a>
+              <a href="https://wa.me/7696728189" aria-label="Whatsapp" target='_blank'><i className="bi bi-whatsapp"></i></a>
             </div>
             <form className="footer-newsletter d-flex flex-column flex-sm-row align-items-center align-items-sm-start justify-content-start" onSubmit={e => e.preventDefault()}>
               <input type="email" className="form-control me-sm-2 mb-2 mb-sm-0" placeholder="Your email" aria-label="Email for newsletter" required style={{ maxWidth: 180 }} />

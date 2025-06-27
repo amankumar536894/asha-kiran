@@ -21,7 +21,7 @@ function ImageGrid() {
   return (
     <section className="image-grid-section">
       <div className="image-grid-header">
-        <h2 style={{ fontSize: '2.3rem', fontWeight: 700, color: '#b45f06', margin: 0, letterSpacing: '1px', marginBottom: '2rem' }}>Moments of Impact</h2>
+        <h2 style={{ fontSize: '2.7rem', fontWeight: 700, color: '#b45f06', margin: 0, letterSpacing: '1px', marginBottom: '2rem' }}>Moments of Impact</h2>
         <p className="image-grid-desc">A glimpse into our journey of compassion, care, and change. Every image tells a story of hope and transformation.</p>
       </div>
       <div className="image-grid">
