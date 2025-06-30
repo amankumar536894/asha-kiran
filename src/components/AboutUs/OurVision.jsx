@@ -2,12 +2,12 @@ import React from 'react';
 import './OurVision.css';
 import { useNavigate } from 'react-router-dom';
 
-const OurVision = () => {
+const OurVision = ({ id }) => {
   const navigate = useNavigate();
   const handleDonate = () => navigate('/donate');
 
   return (
-    <section className="our-vision-section">
+    <section className="our-vision-section" id={id}>
       <div className="our-vision-container">
         <div className="our-vision-image-area">
           <img src="/Gallery_Component/image4.png" alt="Our Vision" className="our-vision-image" />

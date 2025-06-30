@@ -3,14 +3,14 @@ import './HomeAboutUs.css';
 import aboutImg from '../../assets/image.png'; // Use your actual image path
 import { Link, useNavigate } from 'react-router-dom';
 
-const HomeAboutUs = () => {
+const HomeAboutUs = ({ id }) => {
   const navigate = useNavigate()
   const handleDonate = () => {
     navigate('/donate')
   }
 
   return (
-    <section className="homeabout-section">
+    <section className="homeabout-section" id={id}>
       <h2 className="homeabout-title">About Us</h2>
       <div className="homeabout-content-row">
         <div className="homeabout-image-col">

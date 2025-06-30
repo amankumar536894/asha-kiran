@@ -28,9 +28,9 @@ const teamMembers = [
   }
 ];
 
-const TeamShowcase = () => {
+const TeamShowcase = ({ id }) => {
   return (
-    <section className="team-showcase">
+    <section className="team-showcase" id={id}>
       <div className="team-showcase__container">
         <div className="team-showcase__header">
           <h2 className="team-showcase__title">Meet Our Team</h2>

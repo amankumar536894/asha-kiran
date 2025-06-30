@@ -19,9 +19,9 @@ const testimonials = [
   }
 ];
 
-const Testonomials = () => {
+const Testonomials = ({ id }) => {
   return (
-    <section className="testimonials-section">
+    <section className="testimonials-section" id={id}>
       <div className="testimonials-container">
         <h2 className="testimonials-title">What People Say</h2>
         <div className="testimonials-grid">

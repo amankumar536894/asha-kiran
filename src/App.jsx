@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Navigation, { SocialBar } from './components/Navigation'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
@@ -11,10 +11,25 @@ import ContactUs from './pages/ContactUs'
 import WhatsAppCallButtons from './components/WhatsAppCallButtons'
 import Donate from './pages/Donate'
 import './App.css'
+import { useEffect } from 'react';
+
+function ScrollToHash() {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.getElementById(location.hash.replace('#', ''));
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  }, [location]);
+  return null;
+}
 
 function App() {
   return (
     <Router>
+      <ScrollToHash />
       <div className="App">
         <SocialBar />
         <Navigation />

@@ -6,7 +6,18 @@ import './SocialBar.css'
 
 const navLinks = [
   { path: '/', label: 'Home' },
-  { path: '/about_asha_kiran', label: 'About Us' },
+  { 
+    path: '/about_asha_kiran', 
+    label: 'About Us',
+    dropdown: [
+      { path: '/about_asha_kiran#aboutus-home', label: 'About' },
+      // { path: '/about_asha_kiran#aboutus-details', label: 'Details' },
+      { path: '/about_asha_kiran#aboutus-team', label: 'Team' },
+      { path: '/about_asha_kiran#aboutus-vision', label: 'Vision' },
+      { path: '/about_asha_kiran#aboutus-ngo-info', label: 'NGO Info' },
+      { path: '/about_asha_kiran#aboutus-testimonials', label: 'Testimonials' },
+    ]
+  },
   { path: '/our-services_asha_kiran', label: 'Our Services'},
   { path: '/events_asha_kiran', label: 'Events' },
   { path: '/gallery_asha_kiran', label: 'Gallery' },
