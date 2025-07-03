@@ -23,7 +23,7 @@ function Donate() {
           <h1 className="donate-title">Support Our Mission</h1>
           <p className="donate-desc">Your contribution helps us bring hope, education, and empowerment to those who need it most. Every donation makes a difference!</p>
           {submitted ? (
-            <div className="donate-success">Thank you for your generous donation!</div>
+            <div className="donate-success">Thank you for your donation consideration</div>
           ) : (
             <form className="donate-form" onSubmit={handleSubmit} autoComplete="off">
               <div className="donate-form-row">
@@ -78,14 +78,15 @@ function Donate() {
             <h2 className="donate-bank-title">Bank/UPI Details</h2>
             <div className="donate-bank-info">
               <div><strong>Account Name:</strong> Asha Kiran GRD</div>
-              <div><strong>Account Number:</strong> 1234567890</div>
-              <div><strong>IFSC:</strong> ABCD0123456</div>
-              <div><strong>Bank Name:</strong> State Bank of India</div>
-              <div><strong>UPI ID:</strong> ashakiran@sbi</div>
+              <div><strong>Account Number:</strong> 
+              478820110000057</div>
+              <div><strong>IFSC:</strong> BKID0004788</div>
+              <div><strong>Bank Name:</strong> Bank of India</div>
+              {/* <div><strong>UPI ID:</strong> ashakiran@sbi</div> */}
             </div>
             <div className="donate-qr-section">
               <img src="/assets/upi_qr_placeholder.png" alt="UPI QR Code" className="donate-qr-img" />
-              <div className="donate-qr-caption">Scan to Donate via UPI</div>
+              <div className="donate-qr-caption">Scan to Donate via UPI(Available Soon)</div>
             </div>
           </div>
         </div>

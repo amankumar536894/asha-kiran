@@ -37,10 +37,9 @@ function Footer() {
               <div className="footer-links-col">
                 <div className="footer-links-title">Quick Links</div>
                 <ul className="footer-quick-links list-unstyled">
-                  <li><a href="#volunteer">Volunteer</a></li>
-                  <li><a href="#events">Events</a></li>
-                  <li><a href="#stories">Stories</a></li>
-                  <li><a href="#faq">FAQ</a></li>
+                  <li><Link to="/">Home</Link></li>
+                  <li><Link to="/donate">Donate</Link></li>
+                  <li><Link to="/contact_asha_kiran">Contact Us</Link></li>
                 </ul>
               </div>
             </div>

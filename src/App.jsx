@@ -26,9 +26,20 @@ function ScrollToHash() {
   return null;
 }
 
+function ScrollToTop() {
+  const location = useLocation();
+  useEffect(() => {
+    if (!location.hash) {
+      window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }
+  }, [location.pathname]);
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <ScrollToHash />
       <div className="App">
         <SocialBar />

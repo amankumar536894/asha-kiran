@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './ContactSection.css';
+import emailjs from '@emailjs/browser';
 
 const CONTACT = {
   address: 'Malti Niwas, 2nd floor, Anisabad, Patna, India',
   phone: '+91 82351 51802',
-  email: 'info@ashakiran.org',
+  email: 'ashakirangrd11@gmail.com',
   socials: [
     { icon: 'bi-facebook', url: 'https://www.facebook.com/share/1Ccvekj7od/', label: 'Facebook' },
     { icon: 'bi-youtube', url: 'https://youtube.com/@tcs-lh4ry?si=CQpZL5QrSksm52ms', label: 'YouTube' },
@@ -13,9 +14,17 @@ const CONTACT = {
   ],
 };
 
+// Replace these with your actual EmailJS values
+const SERVICE_ID = 'service_ru7zxzl';
+const TEMPLATE_ID = 'template_v2tgome';
+const PUBLIC_KEY = '2uDeDyp8Jqq-PJAGC';
+
 const ContactSection = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(null);
+  const formRef = useRef();
 
   const handleChange = e => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -23,8 +32,20 @@ const ContactSection = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    setSubmitted(true);
-    setForm({ name: '', email: '', subject: '', message: '' });
+    setSending(true);
+    setError(null);
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+      .then(() => {
+        setSubmitted(true);
+        setForm({ name: '', email: '', subject: '', message: '' });
+        setSending(false);
+      })
+      .catch(error => {
+        console.error("EmailJS Error:", error);
+        setError('Failed to send message. Please try again.');
+        setSending(false);
+      });
   };
 
   return (
@@ -53,13 +74,14 @@ const ContactSection = () => {
             ))}
           </div>
         </div>
+
         {/* Contact Form */}
         <div className="contact-form-box">
           <h2 className="contact-form-title">Send Us a Message</h2>
           {submitted ? (
             <div className="contact-form-success">Thank you for reaching out! We'll get back to you soon.</div>
           ) : (
-            <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
+            <form ref={formRef} className="contact-form" onSubmit={handleSubmit} autoComplete="off">
               <div className="contact-form-row">
                 <input
                   type="text"
@@ -104,11 +126,15 @@ const ContactSection = () => {
                   rows={4}
                 ></textarea>
               </div>
-              <button className="contact-form-btn" type="submit">Send Message</button>
+              <button className="contact-form-btn" type="submit" disabled={sending}>
+                {sending ? 'Sending...' : 'Send Message'}
+              </button>
+              {error && <div className="career-form-error">{error}</div>}
             </form>
           )}
         </div>
       </div>
+
       {/* Embedded Map */}
       <div className="contact-map-box">
         <iframe
@@ -126,4 +152,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection; 
+export default ContactSection;

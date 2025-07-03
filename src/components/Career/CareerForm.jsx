@@ -1,11 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import './CareerForm.css';
+import emailjs from '@emailjs/browser';
 
 const POSITIONS = [
   'Select Position',
   'Volunteer',
   'Other',
 ];
+
+// Replace these with your actual EmailJS values
+const SERVICE_ID = 'service_ru7zxzl';
+const TEMPLATE_ID = 'template_ix2jqho';
+const PUBLIC_KEY = '2uDeDyp8Jqq-PJAGC'; // formerly called USER_ID
 
 const CareerForm = () => {
   const [form, setForm] = useState({
@@ -15,23 +21,33 @@ const CareerForm = () => {
     position: '',
     linkedin: '',
     message: '',
-    resume: null,
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState(null);
+  const formRef = useRef();
 
   const handleChange = e => {
-    const { name, value, files } = e.target;
-    if (name === 'resume') {
-      setForm({ ...form, resume: files[0] });
-    } else {
-      setForm({ ...form, [name]: value });
-    }
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
   };
 
   const handleSubmit = e => {
     e.preventDefault();
-    setSubmitted(true);
-    setForm({ name: '', email: '', phone: '', position: '', linkedin: '', message: '', resume: null });
+    setSending(true);
+    setError(null);
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY)
+      .then(() => {
+        setSubmitted(true);
+        setSending(false);
+        setForm({ name: '', email: '', phone: '', position: '', linkedin: '', message: '' });
+      })
+      .catch((err) => {
+        console.error(err);
+        setError('Failed to send application. Please try again.');
+        setSending(false);
+      });
   };
 
   return (
@@ -39,9 +55,11 @@ const CareerForm = () => {
       <div className="career-form-container">
         <h2 className="career-form-title">Apply for a Position</h2>
         {submitted ? (
-          <div className="career-form-success">Thank you for applying! We will review your application and contact you soon.</div>
+          <div className="career-form-success">
+            Thank you for applying! We will review your application and contact you soon.
+          </div>
         ) : (
-          <form className="career-form" onSubmit={handleSubmit} autoComplete="off">
+          <form className="career-form" ref={formRef} onSubmit={handleSubmit} autoComplete="off">
             <div className="career-form-row">
               <label className="career-form-label">Full Name</label>
               <input
@@ -93,17 +111,9 @@ const CareerForm = () => {
                 ))}
               </select>
             </div>
-            <div className="career-form-row">
-              <label className="career-form-label">Resume <span className="career-form-label-hint">(PDF, DOC, DOCX)</span></label>
-              <input
-                type="file"
-                name="resume"
-                className="career-form-input"
-                accept=".pdf,.doc,.docx"
-                onChange={handleChange}
-                required
-              />
-            </div>
+
+            {/* No file upload because EmailJS cannot send files directly */}
+            
             <div className="career-form-row">
               <label className="career-form-label">LinkedIn Profile <span className="career-form-label-hint">(optional)</span></label>
               <input
@@ -120,14 +130,17 @@ const CareerForm = () => {
               <textarea
                 name="message"
                 className="career-form-input career-form-textarea"
-                placeholder="Tell us why you want to join Asha Kiran GRD..."
+                placeholder="Tell us why you want to join..."
                 value={form.message}
                 onChange={handleChange}
                 required
                 rows={4}
               ></textarea>
             </div>
-            <button className="career-form-btn" type="submit">Submit Application</button>
+            <button className="career-form-btn" type="submit" disabled={sending}>
+              {sending ? 'Sending...' : 'Submit Application'}
+            </button>
+            {error && <div className="career-form-error">{error}</div>}
           </form>
         )}
       </div>
@@ -135,4 +148,4 @@ const CareerForm = () => {
   );
 };
 
-export default CareerForm; 
+export default CareerForm;

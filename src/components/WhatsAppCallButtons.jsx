@@ -1,7 +1,7 @@
 import React from 'react'
 import './WhatsAppCallButtons.css'
 
-const whatsappNumber = '918235151802' // Replace with your WhatsApp number
+const whatsappNumber = '917696728189' // Replace with your WhatsApp number
 const phoneNumber = 'tel:8235151802' // Replace with your phone number
 
 function WhatsAppCallButtons() {

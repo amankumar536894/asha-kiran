@@ -414,7 +414,19 @@
   padding: 0.2em 0.5em 0.2em 0.5em;
   box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
   animation: dropdownFadeIn 0.25s;
+  list-style: none;
+  transition: max-height 0.35s cubic-bezier(0.4,0,0.2,1), opacity 0.25s;
+  max-height: 500px;
+  opacity: 1;
+  overflow: hidden;
 }
+
+.mobile-dropdown-menu[aria-hidden="true"] {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 0.5em;
+}
+
 .mobile-dropdown-menu .dropdown-link {
   color: #fff;
   font-size: 1.08em;

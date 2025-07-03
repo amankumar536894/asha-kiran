@@ -58,6 +58,9 @@ function Navigation() {
     setMobileDropdown((prev) => ({ ...prev, [label]: !prev[label] }))
   }
 
+  // Helper to close all mobile dropdowns
+  const closeAllMobileDropdowns = () => setMobileDropdown({});
+
   return (
     <nav className="custom-navbar">
       <div className="nav-inner container-fluid">
@@ -131,7 +134,7 @@ function Navigation() {
             <span className="brand-main">Asha Kiran</span>
             <span className="brand-sub">Foundation</span>
           </div>
-          <button className="close-btn" onClick={() => setMenuOpen(false)} aria-label="Close navigation">
+          <button className="close-btn" onClick={() => { setMenuOpen(false); closeAllMobileDropdowns(); }} aria-label="Close navigation">
             <i className="bi bi-x-lg"></i>
           </button>
         </div>
@@ -151,7 +154,7 @@ function Navigation() {
                 <Link
                   to={link.path}
                   className={`mobile-nav-link${isActive(link.path) ? ' active' : ''}`}
-                  onClick={() => setMenuOpen(false)}
+                  onClick={() => { setMenuOpen(false); closeAllMobileDropdowns(); }}
                 >
                   {link.label}
                 </Link>
@@ -160,7 +163,7 @@ function Navigation() {
                 <ul className="mobile-dropdown-menu">
                   {link.dropdown.map((item) => (
                     <li key={item.path}>
-                      <Link to={item.path} className="dropdown-link" onClick={() => setMenuOpen(false)}>{item.label}</Link>
+                      <Link to={item.path} className="dropdown-link" onClick={() => { setMenuOpen(false); closeAllMobileDropdowns(); }}>{item.label}</Link>
                     </li>
                   ))}
                 </ul>
@@ -190,7 +193,7 @@ function Navigation() {
           <span className="donate-text">Donate Now</span>
         </Link>
       </div>
-      {menuOpen && <div className="mobile-menu-backdrop" onClick={() => setMenuOpen(false)}></div>}
+      {menuOpen && <div className="mobile-menu-backdrop" onClick={() => { setMenuOpen(false); closeAllMobileDropdowns(); }}></div>}
     </nav>
   )
 }
