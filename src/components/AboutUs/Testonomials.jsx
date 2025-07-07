@@ -4,17 +4,17 @@ import './Testonomials.css';
 const testimonials = [
   {
     name: 'Ramshankar Gupta',
-    photo: '/testonomials/ramshankar_gupta.png',
+    photo: '/testonomials/ramshankar_gupta.jpeg',
     quote: 'The dedication of the team is so much inspiring. I am proud to be a part of their journey.'
   },
   {
     name: 'Rekha Sharma',
-    photo: '/testonomials/rekha_sharma.png',
+    photo: '/testonomials/rekha_sharma.jpeg',
     quote: 'Asha Kiran GRD changed my life. Their support and compassion gave me hope and a new beginning.'
   },
   {
     name: 'Sital Solagi',
-    photo: '/testonomials/sital_solagi.png',
+    photo: '/testonomials/sital_solagi.jpeg',
     quote: 'Their work in the community is truly impactful. I recommend supporting Asha Kiran GRD to everyone.'
   }
 ];

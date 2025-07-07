@@ -8,7 +8,7 @@ const events = [
     date: '2025-06-23',
     location: 'Bihar',
     description: 'Over two dozen homes in Fatehpur village, Bihar, are now cooking with clean biogas thanks to the launch of the Govardhan Yojana. Powered by cow dung, this sustainable initiative is transforming rural lives by providing renewable energy and organic fertilizer.',
-    image: '/Blogs/goverdhan_yojana.png',
+    image: '/Blogs/goverdhan_yojana.jpeg',
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const events = [
     date: '2024-08-05',
     location: 'G.T. Road, Asansol',
     description: 'Asha Kiran GRD donated 4 water purifiers to St. Mary Goretti Girls’ Primary School in Asansol, ensuring access to clean drinking water for hundreds of students. This initiative reflects our commitment to health, education, and dignity for every child.',
-    image: '/Blogs/water_coller_implantation.png',
+    image: '/Blogs/water_coller_implantation.jpeg',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const events = [
     date: '2024-09-10',
     location: 'Asha Kiran GRD Center, Dehradun',
     description: 'A workshop focused on skill development, self-confidence, and entrepreneurship for women in our community.',
-    image: '/Gallery_Component/image3.png',
+    image: '/Gallery_Component/image4.jpeg',
   },
 ];
 

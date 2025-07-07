@@ -2,18 +2,18 @@ import React from 'react';
 import './GalleryGrid.css';
 
 const images = [
-  '/Gallery_Component/image1.png',
-  '/Gallery_Component/image2.png',
-  '/Gallery_Component/image3.png',
-  '/Gallery_Component/image4.png',
-  '/Gallery_Component/image5.png',
-  '/Gallery_Component/image6.png',
-  '/Gallery_Component/image7.png',
-  '/Gallery_Component/image8.png',
-  '/Gallery_Component/image9.png',
-  '/Gallery_Component/image10.png',
-  '/Gallery_Component/image11.png',
-  '/Gallery_Component/image12.png',
+  '/Gallery_Component/image1.jpeg',
+  '/Gallery_Component/image2.jpeg',
+  '/Gallery_Component/image3.jpeg',
+  '/Gallery_Component/image4.jpeg',
+  '/Gallery_Component/image5.jpeg',
+  '/Gallery_Component/image6.jpeg',
+  '/Gallery_Component/image7.jpeg',
+  '/Gallery_Component/image8.jpeg',
+  '/Gallery_Component/image9.jpeg',
+  '/Gallery_Component/image10.jpeg',
+  '/Gallery_Component/image11.jpeg',
+  '/Gallery_Component/image12.jpeg',
 ];
 
 const GalleryGrid = () => (

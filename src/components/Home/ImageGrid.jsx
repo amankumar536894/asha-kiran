@@ -3,13 +3,12 @@ import './ImageGrid.css';
 import { useNavigate } from 'react-router-dom';
 
 const images = [
-  '/fb_gallery/image.png',
-  '/fb_gallery/image copy.png',
-  '/fb_gallery/image copy 2.png',
-  '/fb_gallery/image copy 3.png',
-  '/fb_gallery/image copy 4.png',
-  '/fb_gallery/image copy 5.png',
-  '/fb_gallery/image copy 6.png',
+  '/fb_gallery/image.jpeg',
+  '/fb_gallery/imagecopy.jpeg',
+  '/fb_gallery/imagecopy(1).jpeg',
+  '/fb_gallery/imagecopy(2).jpeg',
+  '/fb_gallery/imagecopy(3).jpeg',
+  '/fb_gallery/imagecopy(4).jpeg',
 ];
 
 function ImageGrid() {

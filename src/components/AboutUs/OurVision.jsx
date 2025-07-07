@@ -10,7 +10,7 @@ const OurVision = ({ id }) => {
     <section className="our-vision-section" id={id}>
       <div className="our-vision-container">
         <div className="our-vision-image-area">
-          <img src="/Gallery_Component/image4.png" alt="Our Vision" className="our-vision-image" />
+          <img src="/Gallery_Component/image4.jpeg" alt="Our Vision" className="our-vision-image" />
         </div>
         <div className="our-vision-content">
           <h2 className="our-vision-title">Our Vision and Mission</h2>

@@ -3,28 +3,28 @@ import "./TeamShowcase.css";
 
 const teamMembers = [
   {
-    name: "Prashant Roy",
+    name: "Ramshankar Gupta",
     role: "Head of Education Department Bihar.",
-    img: "/team_members/prashant_roy.png",
+    img: "/team_members/ramshankar_gupta.jpeg",
     desc: "Visionary leader passionate about social change and community empowerment.",
-  },
-  {
-    name: "Deepak Kumar",
-    role: "State Head Bihar",
-    img: "/team_members/deepak_kumar.png",
-    desc: "Expert in project execution, ensuring every initiative makes a real impact.",
-  },
-  {
-    name: "Kamlesh Kumar",
-    role: "Ashs kiran Grd Secretary",
-    img: "/team_members/kamlesh_kumar.png",
-    desc: "Connecting with communities and building lasting relationships.",
   },
   {
     name: "Asha Sharma",
     role: "President",
-    img: "/team_members/asha_sharma.png",
+    img: "/team_members/asha_sharma.jpeg",
     desc: "Dedicated to spreading knowledge and opportunities to all.",
+  },
+  {
+    name: "Kamlesh Kumar",
+    role: "Ashs kiran Grd Secretary",
+    img: "/team_members/kamlesh_kumar.jpeg",
+    desc: "Connecting with communities and building lasting relationships.",
+  },
+  {
+    name: "Deepak Kumar",
+    role: "State Head Bihar",
+    img: "/team_members/deepak_kumar.jpeg",
+    desc: "Expert in project execution, ensuring every initiative makes a real impact.",
   }
 ];
 

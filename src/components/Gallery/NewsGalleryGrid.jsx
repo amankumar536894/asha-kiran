@@ -2,18 +2,18 @@ import React from 'react';
 import './NewsGalleryGrid.css';
 
 const images = [
-  '/news_gallery/image1.png',
-  '/news_gallery/image2.png',
-  '/news_gallery/image3.png',
-  '/news_gallery/image4.png',
-  '/news_gallery/image5.png',
-  '/news_gallery/image6.png',
-  '/news_gallery/image7.png',
-  '/news_gallery/image8.png',
-  '/news_gallery/image9.png',
-  '/news_gallery/image10.png',
-  '/news_gallery/image11.png',
-  '/news_gallery/image12.png',
+  '/news_gallery/image1.jpeg',
+  '/news_gallery/image2.jpeg',
+  '/news_gallery/image3.jpeg',
+  '/news_gallery/image4.jpeg',
+  '/news_gallery/image5.jpeg',
+  '/news_gallery/image6.jpeg',
+  '/news_gallery/image7.jpeg',
+  '/news_gallery/image8.jpeg',
+  '/news_gallery/image9.jpeg',
+  '/news_gallery/image10.jpeg',
+  '/news_gallery/image11.jpeg',
+  '/news_gallery/image12.jpeg',
 ];
 
 const NewsHeader = () => (

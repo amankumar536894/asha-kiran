@@ -5,37 +5,37 @@ import { useNavigate } from 'react-router-dom';
 const galleryData = [
   {
     id: 1,
-    image: '/fb_gallery/image.png',
+    image: '/fb_gallery/image.jpeg',
     category: 'Animal',
     title: 'Beyond Borders: Unity, Love, And Care For Stray Stories.'
   },
   {
     id: 2,
-    image: '/fb_gallery/image copy.png',
+    image: '/fb_gallery/imagecopy.jpeg',
     category: 'Animal',
     title: 'Paws With Purpose: Rescuing And Embracing Hope.'
   },
   {
     id: 3,
-    image: '/fb_gallery/image copy 2.png',
+    image: '/fb_gallery/imagecopy(1).jpeg',
     category: 'Animal',
     title: 'Love Unleashed: Caring For Street Animals.'
   },
   {
     id: 4,
-    image: '/fb_gallery/image copy 3.png',
+    image: '/fb_gallery/imagecopy(2).jpeg',
     category: 'Plantation',
     title: "Our Green Mission: Nurturing Earth's Future."
   },
   {
     id: 5,
-    image: '/fb_gallery/image copy 4.png',
+    image: '/fb_gallery/imagecopy(3).jpeg',
     category: 'Education',
     title: 'Education For All: Lighting The Path To Knowledge.'
   },
   {
     id: 6,
-    image: '/fb_gallery/image copy 5.png',
+    image: '/fb_gallery/imagecopy(4).jpeg',
     category: 'Healthcare',
     title: 'Wellness For Everyone: Spreading Smiles Through Healthcare.'
   }
