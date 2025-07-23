@@ -17,9 +17,9 @@ const HomeAboutUs = ({ id }) => {
           <img src={aboutImg} alt="About Asha Kiran" className="homeabout-image" />
         </div>
         <div className="homeabout-text-col">
-          <h3 className="homeabout-welcome">Welcome to Asha Kiran GRD.</h3>
+          <h3 className="homeabout-welcome">Welcome to Asha Kiran grd.</h3>
           <p className="homeabout-desc">
-            Asha Kiran GRD is a non-profit organization dedicated to empowering communities through education, healthcare, and sustainable development. Our mission is to bring hope and positive change to underprivileged lives, lighting the path to a brighter future. We believe in the power of collective action and compassion to transform society, one step at a time.
+          Asha Kiran GRD is a non-profit organization committed to empowering underprivileged communities through education, healthcare, and sustainable development. Since 2008, we’ve been lighting lives across Jharkhand, Bihar, West Bengal, and Rajasthan — creating opportunities, restoring dignity, and building a brighter, more inclusive future for all.
           </p>
           <div className="homeabout-actions">
             <Link to="/donate" className="homeabout-btn donate-btn" onClick={handleDonate}>Donate Us</Link>

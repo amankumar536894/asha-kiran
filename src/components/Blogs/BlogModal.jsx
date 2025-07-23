@@ -33,7 +33,7 @@ const BlogModal = ({ open, onClose, blog }) => {
             <li>Something inspiring and actionable.</li>
           </ul>
           <p>
-            Thank you for reading! Stay tuned for more inspiring stories and updates from Asha Kiran GRD.
+            Thank you for reading! Stay tuned for more inspiring stories and updates from Asha Kiran grd.
           </p>
         </div>
       </div>

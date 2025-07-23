@@ -66,10 +66,10 @@ function Navigation() {
       <div className="nav-inner container-fluid">
         <div className="nav-left">
           <Link to="/" className="nav-left" style={{ textDecoration: 'none' }}>
-            <img src={logo} alt="Asha Kiran GRD" className="nav-logo" />
+            <img src={logo} alt="Asha Kiran grd" className="nav-logo" />
             <div className="nav-brand-text">
               <span className="brand-main">Asha Kiran</span>
-              <span className="brand-sub">GRD</span>
+              <span className="brand-sub">grd</span>
             </div>
           </Link>
         </div>
@@ -129,7 +129,7 @@ function Navigation() {
       {/* Mobile Overlay Menu */}
       <div className={`mobile-menu-overlay${menuOpen ? ' open' : ''}`}>
         <div className="mobile-menu-header">
-          <img src={logo} alt="Asha Kiran GRD" className="nav-logo" />
+          <img src={logo} alt="Asha Kiran grd" className="nav-logo" />
           <div className="nav-brand-text">
             <span className="brand-main">Asha Kiran</span>
             <span className="brand-sub">Foundation</span>

@@ -77,16 +77,16 @@ function Donate() {
           <div className="donate-bank-details">
             <h2 className="donate-bank-title">Bank/UPI Details</h2>
             <div className="donate-bank-info">
-              <div><strong>Account Name:</strong> Asha Kiran GRD</div>
+              <div><strong>Account Name:</strong> Asha Kiran grd</div>
               <div><strong>Account Number:</strong> 
               478820110000057</div>
               <div><strong>IFSC:</strong> BKID0004788</div>
               <div><strong>Bank Name:</strong> Bank of India</div>
-              {/* <div><strong>UPI ID:</strong> ashakiran@sbi</div> */}
+              <div><strong>UPI ID:</strong> deepakkumar8189@naviaxis</div>
             </div>
             <div className="donate-qr-section">
-              <img src="/assets/upi_qr_placeholder.png" alt="UPI QR Code" className="donate-qr-img" />
-              <div className="donate-qr-caption">Scan to Donate via UPI(Available Soon)</div>
+              <img src="other_image/donation.jpg" alt="UPI QR Code" className="donate-qr-img" />
+              <div className="donate-qr-caption">Scan to Donate via UPI</div>
             </div>
           </div>
         </div>

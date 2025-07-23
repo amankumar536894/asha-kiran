@@ -5,7 +5,7 @@ const stories = [
   {
     name: 'Asha Kumari',
     photo: 'https://randomuser.me/api/portraits/women/68.jpg',
-    story: 'With the support of Asha Kiran GRD, I was able to complete my education and now teach children in my village.'
+    story: 'With the support of Asha Kiran grd, I was able to complete my education and now teach children in my village.'
   },
   {
     name: 'Ramesh Yadav',

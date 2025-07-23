@@ -15,18 +15,18 @@ const events = [
     title: 'Ensuring Clean Water for Every Girl',
     date: '2024-08-05',
     location: 'G.T. Road, Asansol',
-    description: 'Asha Kiran GRD donated 4 water purifiers to St. Mary Goretti Girls’ Primary School in Asansol, ensuring access to clean drinking water for hundreds of students. This initiative reflects our commitment to health, education, and dignity for every child.',
+    description: 'Asha Kiran grd donated 4 water purifiers to St. Mary Goretti Girls’ Primary School in Asansol, ensuring access to clean drinking water for hundreds of students. This initiative reflects our commitment to health, education, and dignity for every child.',
     image: '/Blogs/water_coller_implantation.jpeg',
   },
   {
-    id: 3,
-    title: 'Women Empowerment Workshop',
-    date: '2024-09-10',
-    location: 'Asha Kiran GRD Center, Dehradun',
-    description: 'A workshop focused on skill development, self-confidence, and entrepreneurship for women in our community.',
-    image: '/Gallery_Component/image4.jpeg',
-  },
-];
+    id: 4,
+    title: 'Vermi Compost Units for Organic Growth',
+    date: '2025-07-05',
+    location: 'Ganwa, Jharkhand',
+    description: 'Under the Godhan Nyay Yojana, Kamlesh Kumar from Asha Kiran, Giridih, was selected to set up 4 permanent vermi compost units. This initiative promotes organic farming, waste recycling, and rural employment in partnership with local FPOs and SHGs.',
+    image: '/Blogs/gobar_gas_plant.jpeg',
+  }
+  ];
 
 const EventsList = () => (
   <section className="events-list-section">

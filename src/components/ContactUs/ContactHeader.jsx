@@ -6,7 +6,7 @@ const ContactHeader = () => (
     <div className="contact-header-content">
       <h1 className="contact-header-title">Contact Us</h1>
       <p className="contact-header-subtitle">
-        We're here to help! Reach out to Asha Kiran GRD for any questions, support, or to join our mission. Your voice matters to us.
+        We're here to help! Reach out to Asha Kiran grd for any questions, support, or to join our mission. Your voice matters to us.
       </p>
     </div>
   </header>

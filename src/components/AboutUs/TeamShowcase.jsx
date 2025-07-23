@@ -4,7 +4,7 @@ import "./TeamShowcase.css";
 const teamMembers = [
   {
     name: "Ramshankar Gupta",
-    role: "Head of Education Department Bihar.",
+    role: "Chief patron",
     img: "/team_members/ramshankar_gupta.jpeg",
     desc: "Visionary leader passionate about social change and community empowerment.",
   },
@@ -16,7 +16,7 @@ const teamMembers = [
   },
   {
     name: "Kamlesh Kumar",
-    role: "Ashs kiran Grd Secretary",
+    role: "Ashs kiran grd Secretary",
     img: "/team_members/kamlesh_kumar.jpeg",
     desc: "Connecting with communities and building lasting relationships.",
   },
@@ -33,9 +33,9 @@ const TeamShowcase = ({ id }) => {
     <section className="team-showcase" id={id}>
       <div className="team-showcase__container">
         <div className="team-showcase__header">
-          <h2 className="team-showcase__title">Meet Our Team</h2>
+          <h2 className="team-showcase__title">Our Main Team</h2>
           <p className="team-showcase__subtitle">
-            Our passionate team is the heart of Asha Kiran GRD. Together, we work to create brighter futures and lasting change.
+            Our passionate team is the heart of Asha Kiran grd. Together, we work to create brighter futures and lasting change.
           </p>
         </div>
         <div className="team-showcase__grid">

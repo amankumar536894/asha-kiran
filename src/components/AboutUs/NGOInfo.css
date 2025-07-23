@@ -1,5 +1,5 @@
 .ngo-info-section {
-  width: 100vw;
+  width: 100%;
   margin-left: 50%;
   transform: translateX(-50%);
   background: #f8fafc;
@@ -9,7 +9,7 @@
 }
 
 .ngo-info-container {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   background: #fff;
   border-radius: 0;

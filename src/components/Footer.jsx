@@ -12,7 +12,7 @@ function Footer() {
           <div className="col-12 col-md-4 col-lg-4 text-center text-md-start mb-4 mb-md-0">
             <div className="footer-logo mb-2 d-flex align-items-center justify-content-center justify-content-md-start">
               <img src={logo} alt="NGO Logo" className="footer-logo-img me-2" />
-              <span className="footer-title" >Asha Kiran GRD</span>
+              <span className="footer-title" >Asha Kiran grd</span>
             </div>
             <div className="footer-tagline mb-2">Lighting Lives, Spreading Hope</div>
             <div className="footer-mission">
@@ -66,7 +66,7 @@ function Footer() {
         <hr className="footer-divider my-4" />
         <div className="row">
           <div className="col-12 text-center footer-copyright">
-            &copy; {new Date().getFullYear()} Asha Kiran GRD. All rights reserved.
+            &copy; {new Date().getFullYear()} Asha Kiran grd. All rights reserved.
           </div>
         </div>
       </div>

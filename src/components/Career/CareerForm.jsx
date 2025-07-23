@@ -9,9 +9,9 @@ const POSITIONS = [
 ];
 
 // Replace these with your actual EmailJS values
-const SERVICE_ID = 'service_ru7zxzl';
-const TEMPLATE_ID = 'template_ix2jqho';
-const PUBLIC_KEY = '2uDeDyp8Jqq-PJAGC'; // formerly called USER_ID
+const SERVICE_ID = 'service_xtfxpad';
+const TEMPLATE_ID = 'template_jxe3b2f';
+const PUBLIC_KEY = 'ht6Mxy_KLv6WTH5Bw'; // formerly called USER_ID
 
 const CareerForm = () => {
   const [form, setForm] = useState({

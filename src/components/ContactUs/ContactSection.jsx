@@ -15,9 +15,9 @@ const CONTACT = {
 };
 
 // Replace these with your actual EmailJS values
-const SERVICE_ID = 'service_ru7zxzl';
-const TEMPLATE_ID = 'template_v2tgome';
-const PUBLIC_KEY = '2uDeDyp8Jqq-PJAGC';
+const SERVICE_ID = 'service_xtfxpad';
+const TEMPLATE_ID = 'template_2vr5v14';
+const PUBLIC_KEY = 'ht6Mxy_KLv6WTH5Bw';
 
 const ContactSection = () => {
   const [form, setForm] = useState({ name: '', email: '', subject: '', message: '' });
@@ -138,7 +138,7 @@ const ContactSection = () => {
       {/* Embedded Map */}
       <div className="contact-map-box">
         <iframe
-          title="Asha Kiran GRD Location"
+          title="Asha Kiran grd Location"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3598.6097341247955!2d85.0983704!3d25.584647699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed571a4fb13005%3A0x4791884ba938dbef!2sAnisabad%20Patna!5e0!3m2!1sen!2sin!4v1750945155671!5m2!1sen!2sin"
           width="100%"
           height="320"
